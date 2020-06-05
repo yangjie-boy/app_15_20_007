@@ -1,0 +1,64 @@
+## 对象
+#data: {"name":"lili","pwd":"1234"}
+#
+## 相同层级的元素 左对齐
+#data1:
+#  name: "lili"
+#  pwd: "1234"
+
+
+## yaml文件-格式
+#data2:
+#  - "lili"
+#  - "nana"
+#
+## python-格式
+#data3: ["123","456"]
+
+
+## 拼接-json {"key":[{key:value},{key:value}]}
+#data4:
+#  - name: "lili"
+#  - pwd: "123"
+#
+## 字符串串 -特殊情况 会在⼯工作中看到 ⾃自动转换⼀一部分数据类
+#name: lili
+
+# 布尔 -yaml格式
+#bool1: true
+#bool2: false
+#
+## 布尔 -python格式
+#bool3: True
+#bool4: False
+
+## 整数 浮点数
+#int1: 122
+#float1: 12.00001
+
+## 空类型 None类型
+## yaml
+#data8: ~
+#data11: null
+#data12: Null
+#data13:
+
+## python 不支持 返回字符串
+#data9: None
+#data10: none
+
+## 日期类型
+#data1: 2020-11-11 12:12:12  # 返回python类型为: datetime.datetime
+#data2: 2020-11-11  # 返回python类型为: datetime.data
+#date3: 12:12:12  #  返回的是一串数字, 如果需要返回时分秒 尽量以字符串形式编写
+
+## 特殊日期 月 日 时 分 秒 如果为单数,则必须补0,如果不不补0,则返回字符串
+#data4: 2020-06-02 02:02:02
+#data5: 2020-06-12
+
+
+
+
+
+
+
